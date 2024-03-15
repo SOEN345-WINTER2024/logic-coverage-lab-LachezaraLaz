@@ -5,25 +5,25 @@ public class CheckItTest {
 
     //step 2
     @Test
-    public void testCheckItTrue1(){
+    public void testCheckItTrue(){
         assertTrue(CheckIt.checkIt(true, true, true));
     }
 
     //step 2
     @Test
-    public void testCheckItFalse1(){
-        assertFalse(CheckIt.checkIt(false, false, true));
+    public void testCheckItFalse(){
+        assertFalse(CheckIt.checkIt(false, false, false));
     }
 
     //step 3
     @Test
-    public void testCheckItTrue2(){
+    public void clauseCovTrue() {
         assertTrue(CheckIt.checkIt(true, true, true));
     }
 
     //step 3
     @Test
-    public void testCheckItFalse2(){
+    public void clauseCovFalse() {
         assertFalse(CheckIt.checkIt(false, false, false));
     }
 
