@@ -74,4 +74,39 @@ public class CheckItTest {
     public void CoCTest8(){
         assertFalse(CheckIt.checkIt(false,false,false));
     }
+
+    //step 5 row 2
+    @Test
+    public void CACCTest1(){
+        assertTrue(CheckIt.checkIt(true,true,false));
+    }
+
+    //step 5 row 6
+    @Test
+    public void CACCTest2(){
+        assertFalse(CheckIt.checkIt(false,true,false));
+    }
+
+    //step 6 pair (1,5)
+    @Test
+    public void RACCTest1_5(){
+        assertTrue(CheckIt.checkIt(true,true,true));
+        assertFalse(CheckIt.checkIt(false,true,true));
+    }
+
+    //step 6 part (2,6)
+    @Test
+    public void RACCTest2_6(){
+        assertTrue(CheckIt.checkIt(true,true,false));
+        assertFalse(CheckIt.checkIt(false,true,false));
+    }
+    //step 6 part (3,7)
+    @Test
+    public void RACCTest3_7(){
+        assertTrue(CheckIt.checkIt(true,false,true));
+        assertFalse(CheckIt.checkIt(false,false,true));
+    }
+
+
+
 }
